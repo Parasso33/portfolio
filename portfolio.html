@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>parasso</title>
+    <meta charset="utf-8" />
+    <link href="portfolio.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f6775d1129.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="" id="a">Home</a>
+        </div>
+        <div>
+            <a href="#ke" id="a">About</a>
+        </div>
+        <div>
+            <a href="#project" id="a">Projects</a>
+        </div>
+        <div>
+            <a href="" id="a">Contact</a>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">
+            <span class="icon"></span>
+          </button>
+    </header>
+    <section id="sec1" class="animate-fadeInUp">
+        <div>
+            <h1>👋 Hello! I'm RACHID ELGHAZAOUI,<br> a Full Stack Developer</h1>
+            <div id="prs">
+                <img src="prs.jpg">
+            </div>
+            <p>specializing in JavaScript and the MERN Stack (MongoDB, Express.js, React.js, Node.js)</p>
+            <div>
+               <a href="#contact"><button>Say Hi <i class="fa-solid fa-comment"></i></button></a>
+                <button>Resume <i class="fa-solid fa-file-arrow-down"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="sec2" id="ke">
+        <div>
+            <h2>WHO I AM ?</h2>
+            <p> My journey in software development has been driven by a relentless pursuit of learning and mastering
+                the latest technologies. From building engaging React applications to designing scalable back-end
+                solutions with Node.js, I am dedicated to pushing the boundaries of what's possible in web development.
+                🌟 As I continue to expand my skills and expertise, I am excited to collaborate on new projects and
+                contribute to the ever-evolving landscape of web development. Let's connect and explore how we can
+                create exceptional digital experiences together!</p>
+        </div>
+    </section>
+    <section id="me">
+        <p>I am also kind of an adrenaline junky that loves bikes and adventure. 🏔️ 🏍️ 🔥</p>
+    </section>
+    <h2></h2>
+    <h2>Expertise</h2>
+    <section id="sec3">
+    <div class="carousel" id="project">
+        <div class="c-item" style="transform: rotateY(0deg) translateZ(150px);"><i class="fa-brands fa-html5"></i></div>
+        <div class="c-item" style="transform: rotateY(60deg) translateZ(150px);"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="c-item" style="transform: rotateY(120deg) translateZ(150px);"><i class="fa-brands fa-js"></i></div>
+        <div class="c-item" style="transform: rotateY(180deg) translateZ(150px);"><i class="fa-brands fa-react"></i></div>
+        <div class="c-item" style="transform: rotateY(240deg) translateZ(150px);"><i class="fa-brands fa-git-alt"></i></div>
+        <div class="c-item" style="transform: rotateY(300deg) translateZ(150px);"><i class="fa-brands fa-github"></i></div>
+        <!-- <div class="c-item" style="transform: rotateY(360deg) translateZ(150px);"></div> -->
+        </div>
+    </section>
+      
+    <h2>A Small Selection of Recent Projects</h2>
+    <div class="container">
+        <div class="card">
+          <img src="https://media.about.nike.com/img/cf68f541-fc92-4373-91cb-086ae0fe2f88/001-nike-logos-swoosh-black.jpg?m=eyJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMH0sIndlYnAiOnsicXVhbGl0eSI6MTAwfSwiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjo1MDAwLCJoZWlnaHQiOjI4MTN9LCJyZXNpemUiOnsid2lkdGgiOjEwODB9fX0%3D&s=c29752cfe04e0502ca9f108ca130f79f08ce106d624d5c0e20432503c4ab34e4" alt="NFT Collection" class="card-img">
+          <div class="card-body">
+            <h2 class="title">Shop Website HTML/CSS</h2>
+            <div class="dir">
+            <a href="https://parasso33.github.io/shop/" target="_blank" class="visit-link">Visit</a>
+            <a href="https://github.com/Parasso33/shop" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <img src="https://play-lh.googleusercontent.com/axQ5y2p1Ssy_7c_cKKbHa1lLhqq5KdgjUb-fXjSMvaA_8gcBoLEQUHjffENfePG9aEw=w3840-h2160-rw" alt="tkhrbi9a" class="card-img">
+            <div class="card-body">
+            <h2 class="title">DCP Website HTML/CSS</h2>
+            <div class="dir">
+                <a href="https://parasso33.github.io/Docplanner/" target="_blank" class="visit-link">Visit</a>
+                <a href="https://github.com/Parasso33/Docplanner" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        </div>
+    
+        <div class="card">
+          <img src="https://getlogovector.com/wp-content/uploads/2020/09/glovo-logo-vector.png" alt="Fashion Studio" class="card-img">
+          <div class="card-body">
+            <h2 class="title">Glovo Website HTML/CSS</h2>
+            <div class="dir">
+                <a href="https://parasso33.github.io/glovo-w/" target="_blank" class="visit-link">Visit</a>
+                <a href="https://github.com/Parasso33/glovo-w" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function toggleTheme() {
+          const root = document.documentElement;
+          const isDark = root.dataset.theme === "dark";
+          root.dataset.theme = isDark ? "light" : "dark";
+      
+          const icon = document.querySelector(".icon");
+          icon.classList.toggle("active", !isDark);
+        }
+      </script>
+    <!-- <button id="dir">Show more <i class="fa-solid fa-down-long"></i></button> -->
+    <section class="contact-section" id="contact">
+        <!-- <p class="tag">What's next?</p> -->
+        <h2>Get In Touch</h2>
+        <p class="description">
+            Interested in working together? We should schedule a time to chat. I'll bring the coffee.
+        </p>
+
+        <form class="contact-form" id="contact">
+            <div class="form-row">
+                <input type="text" placeholder="Name *" required />
+                <input type="email" placeholder="Email *" required />
+            </div>
+            <input type="text" placeholder="Subject *" required /><br>
+            <br>
+            <textarea placeholder="Your message *" rows="6" required></textarea>
+            <button type="submit">
+                Send Message <span>↗</span>
+            </button>
+        </form>
+    </section>
+    <footer>
+        <p>I'm here:</p>
+         <div>
+            <a target="_blank" href="https://github.com/Parasso33/Parasso33/blob/main/README.md"><img src="https://cdn.prod.website-files.com/5f10ed4b2ae6bc09c03f5d7a/64959d5f65a257fb51a4259c_github.png"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/rachid-elghazaoui-ab9881340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://digi-act.com/wp-content/uploads/2019/12/linkedin-icon-logo-png-transparent.png"></a>
+            <a target="_blank" href="mailto:rachidberik541@gmail.com"><img src="https://images.icon-icons.com/2642/PNG/512/google_mail_gmail_logo_icon_159346.png"></a>
+            <a target="_blank" href="https://www.instagram.com/rachidelghazaoui?utm_source=qr&igsh=dnkwcHg0b2M2M3Vi"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png"></a>
+         </div>
+        <p>www.myportfolio.com © 2025</p>  
+      </footer>
+</body>
+
+</html>
