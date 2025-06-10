@@ -220,9 +220,6 @@ header {
         font-size: 70px;
     }
   
-  
-
-/* Variables for light and dark */
 :root {
     
     --card-bg: linear-gradient(90deg,rgba(5, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 100%);
@@ -302,7 +299,7 @@ header {
     transform: scale(1.2);
   }
   
-  /* Responsive btn */
+  
   @media (max-width: 700px) {
     .toggle-btn {
       position: static;
@@ -549,7 +546,7 @@ footer img:hover{
 }
 
 footer a{
-    margin: 6px;
+    margin: 20px;
 }
 
 .it{
@@ -563,4 +560,3 @@ footer a{
     font-size: 18px;
     font-weight: 600;
 }
-
