@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 70px;
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -73,7 +73,7 @@ header {
     height: 300px;
     border: 1px #E0E7FF solid;
     border-radius: 10%;
-    margin-left: 360px;
+    margin-left: 347px;
     margin-bottom: 20px;
 }
 
